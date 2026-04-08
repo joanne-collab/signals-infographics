@@ -1,56 +1,62 @@
 {
-    "title": "The Hidden Tax of Productivity: Solving for 'AI Brain Fry'",
+    "title": "When Using AI Leads to \u201cBrain Fry\u201d",
+    "subtitle": "A new study finds that certain patterns of AI use are driving cognitive fatigue, while others can help reduce burnout.",
+    "source_info": {
+        "source_name": "HBR.org",
+        "year": "2026"
+    },
     "content_blocks": [
         {
             "type": "metrics",
-            "title": "The Impact of Intensive AI Oversight",
+            "title": "The Impact of AI Overload on Workers",
             "items": [
                 {
                     "value": "14%",
-                    "label": "Increase in mental effort for high-oversight tasks"
+                    "label": "Of participants reported experiencing 'AI brain fry'"
                 },
                 {
                     "value": "33%",
-                    "label": "Increase in decision fatigue among affected workers"
+                    "label": "Increase in decision fatigue for those with brain fry"
                 },
                 {
                     "value": "39%",
-                    "label": "Increase in major error frequency for those with 'brain fry'"
+                    "label": "Increase in major error frequency for those experiencing brain fry"
                 },
                 {
-                    "value": "39%",
-                    "label": "Higher intent to leave among top AI users experiencing fatigue"
+                    "value": "15%",
+                    "label": "Lower burnout scores when AI replaces routine tasks"
                 }
             ]
         },
         {
             "type": "comparison",
-            "title": "Emotional Burnout vs. AI Brain Fry",
-            "side_a_name": "Emotional Burnout",
-            "side_b_name": "AI Brain Fry",
+            "title": "AI Brain Fry vs. Workplace Burnout",
+            "side_a_name": "AI Brain Fry",
+            "side_b_name": "Workplace Burnout",
             "items": [
                 {
-                    "a": "Driven by repetitive, unenjoyable 'toil' and routine tasks.",
-                    "b": "Driven by intense monitoring, oversight, and information overload."
+                    "a": "Acute mental fatigue caused by excessive cognitive load and oversight.",
+                    "b": "Chronic workplace stress consisting of exhaustion and negative feelings."
                 },
                 {
-                    "a": "Alleviated when AI replaces routine or repetitive work.",
-                    "b": "Worsened when AI increases workload or tool-toggling."
+                    "a": "Symptoms include mental 'fog,' 'buzzing,' and slower decision-making.",
+                    "b": "Symptoms include emotional exhaustion and decreased job effectiveness."
                 },
                 {
-                    "a": "Characterized by physical and emotional exhaustion.",
-                    "b": "Characterized by 'mental static,' fog, and slower decision-making."
+                    "a": "Worsened by intensive AI monitoring and multitasking (3+ tools).",
+                    "b": "Alleviated when AI replaces routine or repetitive 'toil'."
                 }
             ]
         },
         {
-            "type": "insights",
-            "title": "Leadership Strategies to Mitigate Cognitive Strain",
-            "points": [
-                "Cap simultaneous tool use: Productivity gains tend to dip and cognitive load spikes after using more than three AI tools at once.",
-                "Eliminate the 'AI Orphan Tax': Providing manager support and answering AI-related questions can reduce mental fatigue by 15%.",
-                "Shift from activity to impact: Avoid rewarding token consumption or code volume, which incentivizes work intensification over quality.",
-                "Redesign for human + AI limits: Treat human attention as a finite resource and define specific 'spans of control' for agent oversight."
+            "type": "sequence",
+            "title": "Strategic Lessons for Leaders",
+            "steps": [
+                "Redesign jobs and tools holistically for shared human and AI responsibility.",
+                "Set explicit expectations regarding AI's role in total workload and productivity.",
+                "Shift performance metrics from activity and intensity to actual business impact.",
+                "Develop worker skills specifically for managing and prioritizing AI workloads.",
+                "Monitor and safeguard human attention as a finite, strategic resource."
             ]
         }
     ]

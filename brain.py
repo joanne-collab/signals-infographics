@@ -19,14 +19,10 @@ def project_manager(data, template_path="index.html", output_file="index.html"):
             soup = BeautifulSoup(f, "html.parser")
 
         # Inject Title and Subtitle
-        title_full = data.get("title", ": ")
-        if ": " in title_full:
-            title, subtitle = title_full.split(": ", 1)
-        else:
-            title, subtitle = title_full, ""
-        
-        soup.find(id="edition-title").string = title
-        soup.find(id="edition-subtitle").string = subtitle
+        soup.find(id="edition-title").string = data.get("title", "Signals")
+        soup.find(id="edition-subtitle").string = data.get("subtitle", "")
+        soup.find("title").string = f"Big Waves Signals - {data.get('title', 'Infographic')}"
+        soup.find(id="edition-source").string = f"Source: {data.get('source_info', 'Unknown')}"
 
         # Inject Modular Blocks
         infographic_content = soup.find(id="infographic-content")
@@ -143,8 +139,7 @@ def summarize_research(input_dir="input_docs", output_file="data.json"):
     model = genai.GenerativeModel("gemini-flash-latest")
 
     # Craft the prompt for summarization and JSON formatting
-    # Using double braces for f-string literal curly braces
-    prompt = (f"Analyze the following research text and return a JSON object with a 'title' (a catchy title) and a list of 'content_blocks'. "
+    prompt = (f"Analyze the following research text and return a JSON object with a 'title', 'subtitle', 'source_info' (extract 'Source Name' and 'Year' from the text; if they cannot be found, use '{os.path.basename(latest_pdf)}'), and a list of 'content_blocks'. "
               f"Choose 2 to 3 content blocks from these allowed types:\n"
               f"- metrics: (title, items: [{{ 'value': '...', 'label': '...' }}])\n"
               f"- sequence: (title, steps: ['...'])\n"
@@ -154,7 +149,6 @@ def summarize_research(input_dir="input_docs", output_file="data.json"):
 
     try:
         response = model.generate_content(prompt)
-        # Handle cases where the model might wrap JSON in markdown code blocks
         text_content = response.text.strip()
         if text_content.startswith("```json"):
             text_content = text_content[7:]
