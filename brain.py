@@ -22,7 +22,16 @@ def project_manager(data, template_path="index.html", output_file="index.html"):
         soup.find(id="edition-title").string = data.get("title", "Signals")
         soup.find(id="edition-subtitle").string = data.get("subtitle", "")
         soup.find("title").string = f"Big Waves Signals - {data.get('title', 'Infographic')}"
-        soup.find(id="edition-source").string = f"Source: {data.get('source_info', 'Unknown')}"
+        
+        # Inject Source
+        source_data = data.get("source_info", {})
+        if isinstance(source_data, dict):
+            name = source_data.get('source_name', 'Unknown')
+            year = source_data.get('year', '')
+            source_text = f"Source: {name}" + (f", {year}" if year else "")
+        else:
+            source_text = f"Source: {source_data}"
+        soup.find(id="edition-source").string = source_text
 
         # Inject Modular Blocks
         infographic_content = soup.find(id="infographic-content")
