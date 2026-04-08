@@ -1,5 +1,6 @@
 import os
 import json
+import fitz
 import google.generativeai as genai
 from dotenv import load_dotenv
 
@@ -8,10 +9,10 @@ load_dotenv()
 
 from bs4 import BeautifulSoup
 
-def project_manager(data, template_path="index.html", output_file="final_infographic.html"):
+def project_manager(data, template_path="index.html", output_file="index.html"):
     """
     Project Manager: Injects JSON data into index.html placeholders
-    using BeautifulSoup and saves as final_infographic.html.
+    using BeautifulSoup and saves as index.html.
     """
     try:
         with open(template_path, "r", encoding="utf-8") as f:
@@ -104,16 +105,31 @@ def project_manager(data, template_path="index.html", output_file="final_infogra
     except Exception as e:
         print(f"Error in Project Manager: {e}")
 
-def summarize_research(file_path="research.txt", output_file="data.json"):
+def summarize_research(input_dir="input_docs", output_file="data.json"):
     """
-    Reads a research text file, summarizes it using the Gemini API,
-    and saves the result as a JSON file.
+    Reads the most recent PDF file from input_docs, extracts text,
+    summarizes it using the Gemini API, and saves the result as a JSON file.
     """
     try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            research_text = f.read()
-    except FileNotFoundError:
-        print(f"Error: The file {file_path} was not found.")
+        # Find the most recent PDF file
+        pdf_files = [os.path.join(input_dir, f) for f in os.listdir(input_dir) if f.endswith(".pdf")]
+        if not pdf_files:
+            print(f"Error: No PDF files found in {input_dir}.")
+            return
+        
+        # Get the most recent file based on modification time
+        latest_pdf = max(pdf_files, key=os.path.getmtime)
+        print(f"Reading: {latest_pdf}")
+        
+        # Extract text from PDF
+        doc = fitz.open(latest_pdf)
+        research_text = ""
+        for page in doc:
+            research_text += page.get_text()
+        doc.close()
+        
+    except Exception as e:
+        print(f"Error reading PDF: {e}")
         return
 
     # Configure the Gemini API
