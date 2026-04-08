@@ -1,0 +1,43 @@
+{
+    "title": "Restoration Station: The Biological Imperative of Sleep",
+    "content_blocks": [
+        {
+            "type": "sequence",
+            "title": "The Memory Consolidation Journey",
+            "steps": [
+                "Information is initially acquired and processed during wakefulness.",
+                "Slow-wave (NREM N3) and REM sleep cycles begin the integration process.",
+                "Memories are transferred from the hippocampus to the neocortex for permanent long-term storage."
+            ]
+        },
+        {
+            "type": "insights",
+            "title": "Critical Pillars of Nocturnal Health",
+            "points": [
+                "The glymphatic system actively flushes neurotoxic waste, including amyloid-beta, during deep rest.",
+                "Cytokine production peaks during sleep to bolster the immune response against infection.",
+                "Sleep serves as a primary regulator for glucose metabolism and insulin sensitivity."
+            ]
+        },
+        {
+            "type": "comparison",
+            "title": "Optimal Rest vs. Chronic Deprivation",
+            "side_a_name": "Adequate Sleep",
+            "side_b_name": "Sleep Deprivation",
+            "items": [
+                {
+                    "a": "Active detoxification of brain metabolic byproducts.",
+                    "b": "Accumulation of proteins linked to neurodegenerative disease."
+                },
+                {
+                    "a": "Robust immune response and cytokine release.",
+                    "b": "Suppressed immunity and reduced vaccine efficacy."
+                },
+                {
+                    "a": "Stable hormone regulation and glucose metabolism.",
+                    "b": "Increased insulin resistance and risk of type 2 diabetes."
+                }
+            ]
+        }
+    ]
+}

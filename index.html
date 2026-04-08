@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Health Benefits of Sleep - Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Removed external font link -->
+    <style>
+        @font-face {
+            font-family: 'Forma';
+            src: url('assets/forma.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Sebneue';
+            src: url('assets/SebneueAir-m9GG.otf') format('opentype');
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: 'Sebneue';
+            src: url('assets/SebneueThin-a3GK.otf') format('opentype');
+            font-weight: 200;
+        }
+
+        @font-face {
+            font-family: 'Sebneue';
+            src: url('assets/SebneueLight-o8Gd.otf') format('opentype');
+            font-weight: 300;
+        }
+
+        @font-face {
+            font-family: 'Sebneue';
+            src: url('assets/SebneueRegular-eAGm.otf') format('opentype');
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: 'Sebneue';
+            src: url('assets/SebneueMedium-401p.otf') format('opentype');
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: 'Sebneue';
+            src: url('assets/SebneueSemibold-Wgdn.otf') format('opentype');
+            font-weight: 600;
+        }
+
+        @font-face {
+            font-family: 'Sebneue';
+            src: url('assets/SebneueBold-PwMm.otf') format('opentype');
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: 'Sebneue';
+            src: url('assets/SebneueBlack-dDGX.otf') format('opentype');
+            font-weight: 900;
+        }
+
+        * {
+            font-family: var(--font-body);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-headings);
+        }
+        
+        :root {
+            --brand-primary: #289cd5;
+            --brand-primary-accent: #f68b4c;
+            --brand-secondary-accent: #c2b139;
+            --brand-dark: #5f597e;
+            --brand-light: #e3f4fc;
+            --brand-lighter: #f8fafc;
+            
+            /* Typography */
+            --font-headings: 'Forma', sans-serif;
+            --font-body: 'Sebneue', sans-serif;
+        }
+        
+        .text-primary {
+            color: var(--brand-primary);
+        }
+        
+        .bg-primary {
+            background-color: var(--brand-primary);
+        }
+        
+        .border-primary {
+            border-color: var(--brand-primary);
+        }
+        
+        .text-accent {
+            color: var(--brand-primary-accent);
+        }
+
+        .bg-accent {
+            background-color: var(--brand-primary-accent);
+        }
+
+        .text-secondary-accent {
+            color: var(--brand-secondary-accent);
+        }
+        
+        .bg-secondary-accent {
+            background-color: var(--brand-secondary-accent);
+        }
+
+        .text-dark {
+            color: var(--brand-dark);
+        }
+
+        .bg-dark {
+            background-color: var(--brand-dark);
+        }
+
+        .text-light {
+            color: var(--brand-light);
+        }
+
+        .bg-light {
+            background-color: var(--brand-light);
+        }
+        
+        .timeline-line {
+            border-left: 3px solid var(--brand-primary);
+        }
+        
+        .timeline-dot {
+            width: 16px;
+            height: 16px;
+            background-color: var(--brand-primary);
+            border-radius: 50%;
+            position: absolute;
+            left: -9.5px;
+            top: 24px;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--brand-primary);
+        }
+    </style>
+</head>
+<body style="color: var(--brand-dark);" class="bg-gradient-to-b from-slate-50 to-white">
+    
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm p-6 border-b border-gray-100">
+        <div class="flex items-center gap-6">
+            <img src="assets/02-BigW logo 4 DARK bkgrds web.png" alt="BigW Logo" class="h-24 w-auto">
+            <div class="flex flex-col">
+                <h1 class="text-4xl font-black tracking-[0.15em] uppercase text-[var(--brand-dark)]">SIGNALS</h1>
+                <p class="text-xl font-light text-[var(--brand-dark)] opacity-80 tracking-widest">we noticed</p>
+                <p class="text-sm italic opacity-80 mt-4 max-w-2xl text-[var(--color-dark)]">Key points in work we are following, presented as "at a glance" snapshots. Not stored, each one replaces the last when it is posted.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Edition Section -->
+    <section class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 py-20 bg-white">
+        <div class="max-w-4xl w-full">
+            <h1 id="edition-title" class="text-6xl font-black text-[var(--brand-dark)] tracking-[0.05em] mb-4"></h1>
+            <p id="edition-subtitle" class="text-3xl font-light text-[var(--brand-primary)] mb-1 tracking-wide"></p>
+            <p id="edition-source" class="text-sm italic text-[var(--brand-dark)] opacity-75 mt-3">Source: Research Document Name, Year</p>
+
+            <main id="infographic-content" class="flex flex-col gap-10 w-full mt-10"></main>
+        </div>
+    </section>
+
+    <!-- Footer CTA Section -->
+    <section class="py-16 px-4 sm:px-8 bg-gradient-to-r from-blue-50 to-blue-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">engage with Big Waves, directly or through courses and free resources</h2>
+            <a href="https://engage.bigwaves.ca/" class="bg-[var(--brand-primary)] text-white px-10 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity">
+                take a look
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Populate Title
+        const data = window.INFOGRAPHIC_DATA || {
+            "title": "The Nightly Detox: Why Your Brain Craves Sleep",
+            "stats": [
+                "The glymphatic system actively flushes Alzheimer's-linked amyloid-beta proteins during sleep.",
+                "Sleep stages N3 and REM are essential for transferring memories into long-term storage.",
+                "Sleep deprivation suppresses cytokine production, directly weakening the immune response.",
+                "Poor sleep patterns are a primary driver for increased insulin resistance and obesity risk."
+            ],
+            "timeline": [
+                "1924: Hans Berger records the first human EEG, pioneering brain wave analysis.",
+                "1953: REM sleep is discovered, revealing the brain's active state during rest.",
+                "2012: Researchers identify the glymphatic system as the brain’s waste clearance pathway."
+            ]
+        };
+
+        // Populate Title
+        document.getElementById('edition-title').innerText = data.title.split(': ')[0];
+        document.getElementById('edition-subtitle').innerText = data.title.split(': ')[1] || "Discover how sleep transforms your health.";
+
+        // Populate Stats
+        const statsGrid = document.getElementById('stats-grid');
+        statsGrid.innerHTML = data.stats.map(stat => `
+            <div class="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
+                <div class="inline-block w-16 h-16 bg-[var(--brand-light)] rounded-full flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-[var(--brand-primary)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/></svg>
+                </div>
+                <p class="text-base font-semibold">${stat}</p>
+            </div>
+        `).join('');
+
+        // Populate Timeline
+        const timelineContainer = document.getElementById('timeline-list');
+        timelineContainer.innerHTML = data.timeline.map(item => {
+            const [year, event] = item.split(': ');
+            return `
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0 w-24 pt-1">
+                        <div class="timeline-line relative"><div class="timeline-dot"></div></div>
+                    </div>
+                    <div class="flex-grow pb-8">
+                        <div class="bg-gradient-to-r from-[var(--brand-light)] to-transparent rounded-2xl p-8 border border-[var(--brand-light)]">
+                            <span class="inline-block bg-[var(--brand-primary)] text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">${year}</span>
+                            <p class="text-xl font-bold mb-3">${event}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+    </script>
+</body>
+</html>
