@@ -8,58 +8,55 @@
     "content_blocks": [
         {
             "type": "metrics",
-            "title": "The Impact of Intensive AI Oversight",
+            "title": "The Performance and Retention Costs of AI Brain Fry",
             "items": [
                 {
-                    "value": "14%",
-                    "label": "Increase in mental effort for workers with high degrees of AI oversight"
-                },
-                {
-                    "value": "19%",
-                    "label": "Greater information overload predicted by intensive AI monitoring"
-                },
-                {
                     "value": "33%",
-                    "label": "Increase in decision fatigue for workers experiencing AI brain fry"
+                    "label": "Increase in decision fatigue among workers experiencing brain fry"
                 },
                 {
                     "value": "39%",
-                    "label": "Higher frequency of major errors among those with AI-associated mental strain"
+                    "label": "Higher frequency of major errors (safety, outcomes, or decisions)"
+                },
+                {
+                    "value": "34%",
+                    "label": "Active intent to leave among workers with AI brain fry vs 25% without"
                 },
                 {
                     "value": "15%",
-                    "label": "Reduction in burnout scores when AI replaces routine or repetitive tasks"
+                    "label": "Reduction in burnout when AI is used to replace routine tasks"
                 }
             ]
         },
         {
             "type": "comparison",
-            "title": "Distinguishing Burnout from AI Brain Fry",
-            "side_a_name": "Traditional Burnout",
+            "title": "Distinguishing Emotional Burnout from Cognitive Brain Fry",
+            "side_a_name": "Burnout",
             "side_b_name": "AI Brain Fry",
             "items": [
                 {
-                    "a": "State of chronic workplace stress consisting of emotional exhaustion.",
-                    "b": "Acute mental fatigue from oversight of AI tools beyond cognitive capacity."
+                    "a": "State of chronic workplace stress involving emotional exhaustion.",
+                    "b": "Acute mental fatigue caused by marshalling attention beyond cognitive capacity."
                 },
                 {
-                    "a": "Alleviated when AI replaces tiring, repetitive, or unenjoyable tasks.",
-                    "b": "Worsened by high degrees of AI monitoring and increased sphere of accountability."
+                    "a": "Lowered when AI is used to replace repetitive or unenjoyable tasks.",
+                    "b": "Predictably increased by high degrees of AI oversight and monitoring."
                 },
                 {
-                    "a": "Reduced by 15% through the elimination of 'toil'.",
-                    "b": "Associated with a 'buzzing' feeling, mental fog, and headaches."
+                    "a": "Typically characterized by negative feelings about one's job.",
+                    "b": "Characterized by 'mental fog,' 'buzzing' sensations, and headaches."
                 }
             ]
         },
         {
             "type": "insights",
-            "title": "Key Findings on AI Integration and Productivity",
+            "title": "Organizational and Behavioral Drivers of Mental Fatigue",
             "points": [
-                "Productivity gains typically peak at two to three simultaneous AI tools; beyond three tools, productivity scores begin to dip due to multitasking costs.",
-                "Managerial support is a critical buffer: workers whose managers answer AI questions report 15% lower mental fatigue.",
-                "Team-level 'AI orphan taxes' occur when individuals are expected to figure out AI alone, leading to higher measurable fatigue scores.",
-                "The prevalence of 'AI brain fry' varies significantly by role, with marketing (26%) and engineering among the highest, and legal (6%) among the lowest."
+                "Productivity peaks when using two to three AI tools simultaneously, but scores dip significantly when a fourth tool is added.",
+                "High AI oversight\u2014the direct monitoring of agents\u2014is the most taxing engagement, predicting 19% greater information overload.",
+                "Managerial support is a critical buffer: workers whose managers answer AI questions report 15% lower mental fatigue scores.",
+                "The 'AI orphan tax' occurs when employees are expected to figure out tools on their own, resulting in measurably higher fatigue.",
+                "Corporate messaging regarding AI-boosted efficiency often signals unintended 'work intensification' to employees."
             ]
         }
     ]
