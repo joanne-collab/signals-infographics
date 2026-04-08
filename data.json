@@ -1,62 +1,57 @@
 {
-    "title": "When Using AI Leads to \u201cBrain Fry\u201d",
-    "subtitle": "A new study finds that certain patterns of AI use are driving cognitive fatigue, while others can help reduce burnout.",
+    "title": "AI Brain Fry",
+    "subtitle": "Mental Fatigue and the Impact of AI Oversight on Worker Well-being",
     "source_info": {
-        "source_name": "HBR.org",
-        "year": "2026"
+        "Source Name": "BCG Henderson Institute / Harvard Business Review",
+        "Year": "2026"
     },
     "content_blocks": [
         {
             "type": "metrics",
-            "title": "The Performance and Retention Costs of AI Brain Fry",
+            "title": "Organizational Influence on AI-Related Fatigue",
             "items": [
                 {
-                    "value": "33%",
-                    "label": "Increase in decision fatigue among workers experiencing brain fry"
+                    "value": "-28%",
+                    "label": "Fatigue reduction in work-life balance cultures"
                 },
                 {
-                    "value": "39%",
-                    "label": "Higher frequency of major errors (safety, outcomes, or decisions)"
+                    "value": "-15%",
+                    "label": "Fatigue reduction when managers answer AI questions"
                 },
                 {
-                    "value": "34%",
-                    "label": "Active intent to leave among workers with AI brain fry vs 25% without"
+                    "value": "+12%",
+                    "label": "Fatigue increase when AI is perceived as 'more work'"
                 },
                 {
-                    "value": "15%",
-                    "label": "Reduction in burnout when AI is used to replace routine tasks"
+                    "value": "+5%",
+                    "label": "Fatigue increase in 'figure it out yourself' cultures"
                 }
             ]
         },
         {
             "type": "comparison",
-            "title": "Distinguishing Emotional Burnout from Cognitive Brain Fry",
-            "side_a_name": "Burnout",
-            "side_b_name": "AI Brain Fry",
+            "title": "Workload Dynamics: Replacement vs. Addition",
+            "side_a_name": "AI Replaces Tasks",
+            "side_b_name": "AI Adds to Tasks",
             "items": [
                 {
-                    "a": "State of chronic workplace stress involving emotional exhaustion.",
-                    "b": "Acute mental fatigue caused by marshalling attention beyond cognitive capacity."
+                    "a": "Reduces burnout by 15% by offloading repetitive toil.",
+                    "b": "Causes brain fry by raising output expectations without removing work."
                 },
                 {
-                    "a": "Lowered when AI is used to replace repetitive or unenjoyable tasks.",
-                    "b": "Predictably increased by high degrees of AI oversight and monitoring."
-                },
-                {
-                    "a": "Typically characterized by negative feelings about one's job.",
-                    "b": "Characterized by 'mental fog,' 'buzzing' sensations, and headaches."
+                    "a": "Decreases emotional exhaustion and improves social connection.",
+                    "b": "Layers oversight, monitoring, and verification on existing work."
                 }
             ]
         },
         {
             "type": "insights",
-            "title": "Organizational and Behavioral Drivers of Mental Fatigue",
+            "title": "Principles for Sustainable AI Tool Design",
             "points": [
-                "Productivity peaks when using two to three AI tools simultaneously, but scores dip significantly when a fourth tool is added.",
-                "High AI oversight\u2014the direct monitoring of agents\u2014is the most taxing engagement, predicting 19% greater information overload.",
-                "Managerial support is a critical buffer: workers whose managers answer AI questions report 15% lower mental fatigue scores.",
-                "The 'AI orphan tax' occurs when employees are expected to figure out tools on their own, resulting in measurably higher fatigue.",
-                "Corporate messaging regarding AI-boosted efficiency often signals unintended 'work intensification' to employees."
+                "Support mind wandering to facilitate diffuse thinking where insight and creativity occur.",
+                "Foster social engagement to protect users against cognitive and emotional depletion.",
+                "Scaffold skill development to build human capacity rather than simply substituting for it.",
+                "Design for neurobiology and sustainable value rather than just speed and throughput."
             ]
         }
     ]
