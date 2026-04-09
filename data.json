@@ -1,57 +1,60 @@
 {
-    "title": "AI Brain Fry",
-    "subtitle": "Mental Fatigue and the Impact of AI Oversight on Worker Well-being",
+    "title": "The Shift Towards AI-Driven Automation in Small Businesses",
+    "subtitle": "Accelerating adoption, strategic implementation, and operational impact for SMBs.",
     "source_info": {
-        "Source Name": "BCG Henderson Institute / Harvard Business Review",
-        "Year": "2026"
+        "source_name": "AI for SMBs Report",
+        "year": 2024
     },
     "content_blocks": [
         {
             "type": "metrics",
-            "title": "Organizational Influence on AI-Related Fatigue",
+            "title": "Key Adoption & Efficiency Projections",
             "items": [
                 {
-                    "value": "-28%",
-                    "label": "Fatigue reduction in work-life balance cultures"
+                    "value": "75%",
+                    "label": "Small business owners planning AI implementation by 2025"
                 },
                 {
-                    "value": "-15%",
-                    "label": "Fatigue reduction when managers answer AI questions"
-                },
-                {
-                    "value": "+12%",
-                    "label": "Fatigue increase when AI is perceived as 'more work'"
-                },
-                {
-                    "value": "+5%",
-                    "label": "Fatigue increase in 'figure it out yourself' cultures"
-                }
-            ]
-        },
-        {
-            "type": "comparison",
-            "title": "Workload Dynamics: Replacement vs. Addition",
-            "side_a_name": "AI Replaces Tasks",
-            "side_b_name": "AI Adds to Tasks",
-            "items": [
-                {
-                    "a": "Reduces burnout by 15% by offloading repetitive toil.",
-                    "b": "Causes brain fry by raising output expectations without removing work."
-                },
-                {
-                    "a": "Decreases emotional exhaustion and improves social connection.",
-                    "b": "Layers oversight, monitoring, and verification on existing work."
+                    "value": "Up to 30%",
+                    "label": "Expected cost savings in the first year"
                 }
             ]
         },
         {
             "type": "insights",
-            "title": "Principles for Sustainable AI Tool Design",
+            "title": "Primary Automation Targets",
             "points": [
-                "Support mind wandering to facilitate diffuse thinking where insight and creativity occur.",
-                "Foster social engagement to protect users against cognitive and emotional depletion.",
-                "Scaffold skill development to build human capacity rather than simply substituting for it.",
-                "Design for neurobiology and sustainable value rather than just speed and throughput."
+                "Customer service and data entry are the primary targets for automation."
+            ]
+        },
+        {
+            "type": "sequence",
+            "title": "Strategic Implementation Steps",
+            "steps": [
+                "Audit current manual processes.",
+                "Identify low-hanging fruit (repetitive tasks).",
+                "Pilot AI tools in one department.",
+                "Scale based on ROI."
+            ]
+        },
+        {
+            "type": "comparison",
+            "title": "Manual vs AI Operational Impact",
+            "side_a_name": "Manual",
+            "side_b_name": "AI",
+            "items": [
+                {
+                    "a": "High labor costs",
+                    "b": "Lower long-term costs"
+                },
+                {
+                    "a": "Human error",
+                    "b": "High precision"
+                },
+                {
+                    "a": "Slow turnaround",
+                    "b": "24/7 operation"
+                }
             ]
         }
     ]
